@@ -1,0 +1,18 @@
+.card {
+  max-width: 250px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+
+@media (max-width: 640px) {
+  .card {
+    width: 300px;
+  }
+}
+@media (max-width: 380px) {
+  .card {
+    width: auto;
+  }
+}
