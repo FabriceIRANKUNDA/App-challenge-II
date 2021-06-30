@@ -81,7 +81,7 @@ const AlbulmItems = (props) => {
         <ErrorModal
           onRemoveErrorModal={removeError}
           title="Invalid ID"
-          message="No photos of given album ID, use IDs < 100"
+          message="No photos of given album ID, use 0< IDs <100"
         />
       )
     ),
