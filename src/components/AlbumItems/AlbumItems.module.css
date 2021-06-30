@@ -3,7 +3,35 @@
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-gap: 4rem 10px;
   padding: 2rem;
+  margin-bottom: 4rem;
 }
+
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #03256c;
+  cursor: pointer;
+}
+
+.paginationContainer {
+  float: right;
+}
+
+.paginationBttns a:hover,
+.paginationActive a {
+  color: #fff;
+  background-color: #03256c;
+}
+
 
 @media (max-width: 580px) {
   .album-container {
