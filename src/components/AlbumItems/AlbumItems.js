@@ -44,18 +44,14 @@ const AlbulmItems = (props) => {
     const fetchData = async () => {
       const res = await axios({
         method: 'GET',
-        url: `https://jsonplaceholder.typicode.com/albums/${props.albumId}/photos`,
+        url: `https://app-challenge-ii.herokuapp.com/api/v1/get-album/${props.albumId}`,
       });
       setShowSpinner(false);
       if (!res.data.length) {
         setIsDataAvailable(false);
       }
-      const cleanData = res.data.map((data) => ({
-        id: data.id,
-        title: data.title,
-        thumbnailUrl: data.thumbnailUrl,
-      }));
-      setData(cleanData);
+
+      setData(res.data.data);
     };
     fetchData();
   }, [props.albumId]);
