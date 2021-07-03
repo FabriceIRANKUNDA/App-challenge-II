@@ -35,7 +35,7 @@ const SearchForm = (props) => {
       {isNotValidId && (
         <ErrorModal
           title="Invalid Input"
-          message="Please enter a valid album ID ( >0)"
+          message="Please enter a valid album ID ( 0<ID<100)"
           onRemoveErrorModal={errorHandler}
         />
       )}
