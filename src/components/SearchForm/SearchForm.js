@@ -55,7 +55,7 @@ const SearchForm = (props) => {
               </div>
               <input
                 id={styles.search}
-                type="text"
+                type="number"
                 placeholder="Get Album Photos By Id"
                 value={albumId}
                 onChange={onAlbumIdChangeHandler}
