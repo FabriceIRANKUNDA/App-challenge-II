@@ -13,7 +13,7 @@ const SearchForm = (props) => {
       setIsNotValidId(true);
       return;
     }
-    if (!Number.isInteger(+albumId) || +albumId < 0) {
+    if (!Number.isInteger(+albumId) || +albumId < 0 || +albumId > 100) {
       setIsNotValidId(true);
       return;
     }
